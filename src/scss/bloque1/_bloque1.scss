@@ -1,0 +1,143 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque1 {
+    height: auto; //mientras
+    // transition: background-color 1.5s ease;
+    background-color: v.$gestion;
+    // display: flex;
+    // justify-content: center;
+    // padding-bottom: 3rem;
+    overflow: hidden;
+    position: relative;
+    @include m.desktop_1020 {
+        padding-bottom: 0;
+        height:  70rem;
+        // background-color: v.$color1;
+        // background: rgb(255,12,41);     
+        // background: linear-gradient(90deg, rgba(255,12,41,1) 50%, rgba(253,29,29,1) 50%, rgba(255,255,255,1) 50%);      
+    }
+    @include m.desktop_1340 {
+        height: 75rem;
+    }
+    @include m.desktop_1500 {
+        height: 80rem;
+    }
+    @include m.desktop_1800 {
+        height: 90rem;    
+    }
+    // @include m.desktop_1280 {
+    //     height: 70rem;
+    // }
+}
+
+.bloque1TopImageBack  {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    img {
+        width: 32rem;
+    }
+}
+
+.bloque1TopImageLogo {
+    position: absolute;
+    left: 1.5rem;
+    top: 3rem;
+    z-index: 20;
+    img {
+        width: 17rem;
+    }
+}
+
+.bloque1Title {
+    width: 100%;
+    margin-top: 16rem;
+    display: grid;
+    justify-items: center;
+    h3 {
+        width: 85%;
+        margin: 0;
+        font-size: 2.2rem;
+        text-align: center;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    }
+}
+
+.bloque1Description {
+    margin-top: 2rem;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    h3 {
+        text-align: center;
+        width: 85%;        
+        font-size: 1.7rem;
+        font-weight: 500;
+        margin: 0;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    }
+}
+
+.bloque1ButonBrochure {
+    width: 100%;
+    // background-color: green;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    button {
+        width: 20rem;
+        background-color: v.$color1;
+        display: grid;
+        justify-items: center;
+        border: none;
+        border-radius: 1rem;
+        h3 {
+            color: white;
+            margin: 0;
+            width: 80%;
+            padding: 1rem 0;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.bloque1ButonBrochure2 {
+    button {
+        position: relative;
+        img {
+            position: absolute;
+            width: 3rem;
+            left: 12%;
+            top: 25%;
+        }
+        h3 {
+            padding: 1rem 0 1rem 3.5rem;
+        }
+    }
+}
+
+.bloque1DescriptionTwo {
+    margin-top: 2rem;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    h3 {
+        width: 80%;
+        margin: 0;
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: 500;
+        span {
+            font-weight: 800;
+        }
+    }
+}
+
+.bloque1ImageBottom {
+    margin-top: 2rem;
+    img {
+        width: 100%;
+    }
+}
